@@ -36,8 +36,7 @@ app.use(
       maxAge: 1000 * 60 * 60 * 24 * 7,
     },
     store: MongoStore.create({
-      mongoUrl: process.env.MONGO_URI 
-        || "mongodb+srv://haihuynhcit20:Xrikkk6xgRLcf3MS@fitnessstudio.qibuuw7.mongodb.net/",
+      mongoUrl: process.env.MONGO_URI,
       collectionName: "sessions",
     }),
   })
